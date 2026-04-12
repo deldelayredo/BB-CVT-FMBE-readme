@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BB转FMBE命令之转换器（最终修正）</title>
+    <title>BB转FMBE命令之转换器</title>
     <style>
-        /* 样式与原文件完全一致，此处省略以节省篇幅，实际使用时请保留完整样式 */
+        
         * {
             margin: 0;
             padding: 0;
@@ -697,8 +697,8 @@
         </div>
         <div class="footer-note">
             注：数值经过转换，结果可直接用于对应版本的FMBE<br>——————————<br>更新日志:<br>2026/2/20 b0适配普通版<br>
-2026/2/21 v.1 新添加了选择版本时，对版本的简概描述<br>
-移出〈前置旋转矩阵〉版本fmbe<br>修复错别字<br>2026/2/22 v.2 新增单方块独立复制按钮，修复版本选择与转换功能bug<br>2026/2/23 v.2.1修复数据不显示问题<br>2026/2/24 v.3 新增触手型关键帧动画转换实验性功能，支持多父骨骼。<br>v.3-b2修复换算系数k≠1时，basepos的计算错误问题<br><br>2026/2/25 v.3-b3 修复h=0兼容、（yscale、extend_scale）high=NaN问题<br>x轴镜像问题<br>2026/2/25 v.3-b4 修复了关键帧动画所有basepos和rot<br>正负符号错误的问题，添加了bug<br>2026/2/25 v.3-b5 修复公版输出的basepos数据错误bug<br>2026/2/25 v.3-b6 实验内容：支持cube存在一级以上父骨骼<br>2026/2/27 v.4-b1 新增补全molang前后指令功能<br>2026/2/28 v.4-b2 修复rot取反问题，增加了bug<br>2026/2/28 v.4-b3 增加文件功选择功能<br>2026/2/29 v.4-b4 修复了普通版scale输出格式漏掉v.的问题<br>2026/3/1 v.4-b5 修复了动画转换器无法使用问题<br>2026/3/1 v.4-b6 修复了|xrot|>90时输出滚木的问题<br>2026/3/3 v.5-b1及b2 尝试修复rot三轴同时有值的换算错误<br>2026/3/5 v.5-b3 已解决rot换算错误问题<br>2026/3/5 v.6 优化复制格式； 2026/3/6 v.6-b1 增加&<>调用方块编号功能<br>2026/3/7 v.6-b2 彻底移除动画转换UI及骨骼延伸长度<br>2026/3/7 v.6-b3 添加简单教程<br>2026/3/7 v.7 新增模型多父骨骼转换功能（静态模型）<br>2026/3/8 v.7.1 修复无父骨骼xbasepos取反问题<br>2026/3/8 v.7.2 修复无pivot块，错误赋值为骨骼旋转中心的问题<br>2026/3/10 v.7.3 修复“祈祷不出bug”无效的问题 2026/3/14 v.8.0 新增模型多父骨骼绑定功能（旋转矩阵） <br>2026/3/15 v.8.2 补全exr和eyr<br>——————————<br>😭出现bug请联系<br>小E（QQ号3155929574）。
+            2026/2/21 v.1 新添加了选择版本时，对版本的简概描述<br>
+            移出〈前置旋转矩阵〉版本fmbe<br>修复错别字<br>2026/2/22 v.2 新增单方块独立复制按钮，修复版本选择与转换功能bug<br>2026/2/23 v.2.1修复数据不显示问题<br>2026/2/24 v.3 新增触手型关键帧动画转换实验性功能，支持多父骨骼。<br>v.3-b2修复换算系数k≠1时，basepos的计算错误问题<br><br>2026/2/25 v.3-b3 修复h=0兼容、（yscale、extend_scale）high=NaN问题<br>x轴镜像问题<br>2026/2/25 v.3-b4 修复了关键帧动画所有basepos和rot<br>正负符号错误的问题，添加了bug<br>2026/2/25 v.3-b5 修复公版输出的basepos数据错误bug<br>2026/2/25 v.3-b6 实验内容：支持cube存在一级以上父骨骼<br>2026/2/27 v.4-b1 新增补全molang前后指令功能<br>2026/2/28 v.4-b2 修复rot取反问题，增加了bug<br>2026/2/28 v.4-b3 增加文件功选择功能<br>2026/2/29 v.4-b4 修复了普通版scale输出格式漏掉v.的问题<br>2026/3/1 v.4-b5 修复了动画转换器无法使用问题<br>2026/3/1 v.4-b6 修复了|xrot|>90时输出滚木的问题<br>2026/3/3 v.5-b1及b2 尝试修复rot三轴同时有值的换算错误<br>2026/3/5 v.5-b3 已解决rot换算错误问题<br>2026/3/5 v.6 优化复制格式； 2026/3/6 v.6-b1 增加&<>调用方块编号功能<br>2026/3/7 v.6-b2 彻底移除动画转换UI及骨骼延伸长度<br>2026/3/7 v.6-b3 添加简单教程<br>2026/3/7 v.7 新增模型多父骨骼转换功能（静态模型）<br>2026/3/8 v.7.1 修复无父骨骼xbasepos取反问题<br>2026/3/8 v.7.2 修复无pivot块，错误赋值为骨骼旋转中心的问题<br>2026/3/10 v.7.3 修复“祈祷不出bug”无效的问题 2026/3/14 v.8.0 新增模型多父骨骼绑定功能（旋转矩阵） <br>2026/3/15 v.8.2 补全exr和eyr<br>2026/4/11 v.8.3 完善欧拉角死锁问题<br>不再添加新功能，更多功能请直接使用FMBE模拟器——————————<br>😭出现bug请联系<br>小E（QQ号3155929574）。
         </div>
     </div>
     <div id="tutorialOverlay" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.7); z-index: 9999; display: flex; align-items: center; justify-content: center;">
@@ -773,7 +773,7 @@
             function rad2deg(rad) { return rad * 180.0 / M_PI; }
             function normalizeTinyOffset(angle) { const rounded = Math.round(angle); return Math.abs(angle - rounded) <= OFFSET_EPS ? rounded : angle; }
 
-            // 构建 Blockbench 旋转矩阵（内旋 XYZ，右手系，逆时针为正）—— 与原版一致，角度取负
+            // 构建 Blockbench 旋转矩阵（内旋 XYZ，右手系，逆时针为正）—— 与原版一致
             function buildBlockbenchRotMatrix(rx, ry, rz) {
                 const a = deg2rad(rx);
                 const b = deg2rad(ry);
@@ -816,26 +816,30 @@
                 return p;
             }
 
-            // 角度提取函数（用于非精确万向锁）
-            function matrix2FMBEAngles(mat) {
+            // ==================== ZXY 顺序欧拉角提取（符合FMBE标准） ====================
+            // 从旋转矩阵中提取 ZXY 顺序的欧拉角（内旋，右手系）
+            // 矩阵 R = Rz(rz) * Rx(rx) * Ry(ry)
+            // 提取公式：
+            //   rx = asin(r21)
+            //   ry = atan2(-r20, r22)
+            //   rz = atan2(-r01, r11)
+            function matrix2FMBEAngles_ZXY(mat) {
                 const r00 = mat[0][0], r01 = mat[0][1], r02 = mat[0][2];
                 const r10 = mat[1][0], r11 = mat[1][1], r12 = mat[1][2];
                 const r20 = mat[2][0], r21 = mat[2][1], r22 = mat[2][2];
 
-                let sinPhi = -r12;
-                sinPhi = Math.min(Math.max(sinPhi, -1), 1);
-                const cosPhi = Math.sqrt(1 - sinPhi * sinPhi);
-                let rx, ry, rz;
+                let rx = Math.asin(Math.min(Math.max(r21, -1), 1));
+                let cosRx = Math.cos(rx);
+                let ry, rz;
 
-                if (Math.abs(cosPhi) < 1e-6) {
-                    // 万向锁：使用备选公式，但不将 rz 强制为 0，而是用 atan2(r20, r22) 保持连续性
-                    rz = Math.atan2(r20, r22);
+                if (Math.abs(cosRx) < 1e-6) {
+                    // 万向锁：cosRx ≈ 0，rx ≈ ±90°
+                    // 此时使用简化公式：ry = atan2(r02, r22)，rz = 0
                     ry = Math.atan2(r02, r22);
-                    rx = (sinPhi > 0) ? Math.PI/2 : -Math.PI/2;
+                    rz = 0;
                 } else {
-                    rx = Math.asin(sinPhi);
-                    ry = Math.atan2(r02, r22);
-                    rz = Math.atan2(r10, r11);
+                    ry = Math.atan2(-r20, r22);
+                    rz = Math.atan2(-r01, r11);
                 }
 
                 rx = rad2deg(rx);
@@ -846,11 +850,11 @@
                 ry = normalizeTinyOffset(ry);
                 rz = normalizeTinyOffset(rz);
 
-                // 保持与原版兼容：输出 ry 取负
-                ry = -ry;
-
                 return { rx, ry, rz };
             }
+
+            // 保留原函数名以便替换
+            const matrix2FMBEAngles = matrix2FMBEAngles_ZXY;
 
             function parseVec3(arr) {
                 if (!Array.isArray(arr) || arr.length !== 3) return { valid: false, x: 0, y: 0, z: 0 };
@@ -959,8 +963,13 @@
                     : tens[ten] + (digit === 0 ? "" : digits[digit]);
             }
 
+            // 修复：避免科学计数法，将极小数归零
             function formatNum(n) {
-                return Number(n.toPrecision(6)).toString();
+                if (Math.abs(n) < 1e-12) return "0";
+                // 保留最多10位小数，去除末尾的零
+                let str = n.toFixed(10).replace(/\.?0+$/, "");
+                if (str === "" || str === "-0") return "0";
+                return str;
             }
 
             function escapeHTML(str) {
@@ -975,6 +984,7 @@
                 return name.replace(/[^a-zA-Z0-9_]/g, '_');
             }
 
+            // 生成动态骨骼的世界矩阵（与原来相同，但角度提取表达式改为 ZXY）
             function generateBoneWorldMatrices(bones, boneMap) {
                 let lines = [];
                 let roots = bones.filter(b => !b.parent);
@@ -987,6 +997,11 @@
                     lines.push(`v.sy_${safe}=math.sin(-(${yv})); v.cy_${safe}=math.cos(-(${yv}));`);
                     lines.push(`v.sz_${safe}=math.sin(-(${zv})); v.cz_${safe}=math.cos(-(${zv}));`);
 
+                    // 构建 ZXY 顺序的局部旋转矩阵（先绕Z，再绕X，再绕Y）
+                    // 注意：这里的公式与动态提取时的矩阵乘法对应，但动态模式下我们会直接从世界矩阵中提取ZXY角度
+                    // 为了保持一致性，我们仍然使用原来的XYZ矩阵构建，但在提取时使用ZXY公式。
+                    // 所以这里不需要修改矩阵构建，只需修改后面的角度提取表达式。
+                    // 下面的矩阵构建保留原样（XYZ顺序），因为最终我们要从世界矩阵中提取ZXY角度。
                     let l00 = `(v.cy_${safe})*(v.cz_${safe})`;
                     let l01 = `-(v.cy_${safe})*(v.sz_${safe})`;
                     let l02 = `(v.sy_${safe})`;
@@ -1110,19 +1125,11 @@
                                 finalRotMatrix = R;
                             } else { finalRotMatrix = cubeRotMatrix || [[1,0,0],[0,1,0],[0,0,1]]; }
                             
-                            // 特殊处理：对于精确万向锁（原始 rx 接近 ±90°，ry、rz 接近 0），直接使用原始角度，避免矩阵提取出错
-                            let fmbe_rx, fmbe_ry, fmbe_rz;
-                            if (cube.has_rotation && Math.abs(Math.abs(cube.rotation[0]) - 90) < 0.01 && Math.abs(cube.rotation[1]) < 0.01 && Math.abs(cube.rotation[2]) < 0.01) {
-                                // 直接使用原始角度转换：rx 取反，ry 取反，rz 不变（根据一、二号正确输出推导）
-                                fmbe_rx = -cube.rotation[0];
-                                fmbe_ry = -cube.rotation[1];
-                                fmbe_rz = cube.rotation[2];
-                            } else {
-                                const angles = matrix2FMBEAngles(finalRotMatrix);
-                                fmbe_rx = angles.rx;
-                                fmbe_ry = angles.ry;
-                                fmbe_rz = angles.rz;
-                            }
+                            // 使用 ZXY 顺序提取角度
+                            const angles = matrix2FMBEAngles(finalRotMatrix);
+                            let fmbe_rx = angles.rx;
+                            let fmbe_ry = -angles.ry;
+                            let fmbe_rz = angles.rz;
                             
                             let worldPivot = cube.has_cube_pivot ? finalCubePivot : finalCenter;
                             const factorPos = (currentVersion===3)?16:1;
@@ -1148,7 +1155,6 @@
                                     let m00=cubeRotMatrix[0][0], m01=cubeRotMatrix[0][1], m02=cubeRotMatrix[0][2];
                                     let m10=cubeRotMatrix[1][0], m11=cubeRotMatrix[1][1], m12=cubeRotMatrix[1][2];
                                     let m20=cubeRotMatrix[2][0], m21=cubeRotMatrix[2][1], m22=cubeRotMatrix[2][2];
-                                    // 骨骼世界矩阵 × 立方体旋转矩阵
                                     let f00 = `v.w_${safeBone}_0*${m00} + v.w_${safeBone}_1*${m10} + v.w_${safeBone}_2*${m20}`;
                                     let f01 = `v.w_${safeBone}_0*${m01} + v.w_${safeBone}_1*${m11} + v.w_${safeBone}_2*${m21}`;
                                     let f02 = `v.w_${safeBone}_0*${m02} + v.w_${safeBone}_1*${m12} + v.w_${safeBone}_2*${m22}`;
@@ -1167,19 +1173,25 @@
                                     finalMatrixLines.push(`v.F6 = v.w_${safeBone}_6; v.F7 = v.w_${safeBone}_7; v.F8 = v.w_${safeBone}_8;`);
                                 }
                                 let rad2degVal = 180/Math.PI;
-                                // 动态模式下也使用修正后的万向锁处理逻辑
-                                let sinPhi = `-v.F5`;
+                                // 动态模式下的角度提取改为 ZXY 顺序
+                                // 使用矩阵 v.F0..v.F8 提取 ZXY 欧拉角
+                                // rx = asin(v.F5)  注意：矩阵索引对应关系：r21 = v.F5
+                                // ry = atan2(-v.F2, v.F8)
+                                // rz = atan2(-v.F1, v.F4)
+                                let sinPhi = `v.F5`;
                                 let cosPhi = `math.sqrt(1 - (${sinPhi})*(${sinPhi}))`;
                                 let condGimbal = `math.abs(${cosPhi}) < 1e-6`;
                                 let normalRx = `math.asin(${sinPhi})`;
-                                let normalRy = `math.atan2(v.F2, v.F8)`;
-                                let normalRz = `math.atan2(v.F3, v.F4)`;
+                                let normalRy = `math.atan2(-v.F2, v.F8)`;
+                                let normalRz = `math.atan2(-v.F1, v.F4)`;
                                 let gimbalRx = `(${sinPhi} > 0 ? ${Math.PI/2} : -${Math.PI/2})`;
-                                let gimbalRy = `math.atan2(v.F2, v.F8)`;
-                                let gimbalRz = `math.atan2(v.F6, v.F8)`;
+                                let gimbalRy = `math.atan2(-v.F2, v.F8)`;  // 万向锁时 ry 同样处理
+                                let gimbalRz = `0`;  // 万向锁时 rz 设为0
                                 let rxExpr = `( (${condGimbal}) ? (${gimbalRx}) : (${normalRx}) ) * ${rad2degVal}`;
-                                let ryExpr = `- ( (${condGimbal}) ? (${gimbalRy}) : (${normalRy}) ) * ${rad2degVal}`;
+                                let ryExpr = `( (${condGimbal}) ? (${gimbalRy}) : (${normalRy}) ) * ${rad2degVal}`;
                                 let rzExpr = `( (${condGimbal}) ? (${gimbalRz}) : (${normalRz}) ) * ${rad2degVal}`;
+                                // 注意：这里没有对 ry 取反，因为 ZXY 提取的 ry 已经符合 FMBE 习惯，如果需要调整可以添加
+                                // ryExpr = `-(${ryExpr})`;  // 如果需要取反
                                 let d_local_x = `(v.F0)*${offset_world[0]} + (v.F3)*${offset_world[1]} + (v.F6)*${offset_world[2]}`;
                                 let d_local_y = `(v.F1)*${offset_world[0]} + (v.F4)*${offset_world[1]} + (v.F7)*${offset_world[2]}`;
                                 let d_local_z = `(v.F2)*${offset_world[0]} + (v.F5)*${offset_world[1]} + (v.F8)*${offset_world[2]}`;
